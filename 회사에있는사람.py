@@ -17,9 +17,15 @@ sys.stdin = open('회사에있는사람.txt')
 # 현재 회사에 있는 사람의 이름을 사전 순의 역순으로 한 줄에 한 명씩 출력한다.
 
 T = int(input())
-dic = {}
+dic_ = {}
+# => dic = dict()
 for i in range(T):
     a, b = input().split()
-    dic[a] = b
+    dic_[a] = b
 
-print(dic)
+list_ = []
+for key in dic_:
+    if dic_[key] == 'enter':
+        list_.append(key)
+
+print(list_)
