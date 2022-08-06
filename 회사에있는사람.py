@@ -28,4 +28,6 @@ for key in dic_:
     if dic_[key] == 'enter':
         list_.append(key)
 
-print(list_)
+list_.sort(reverse=True)
+for str in list_:
+    print(str)
